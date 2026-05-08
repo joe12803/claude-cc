@@ -16,7 +16,7 @@ jobs:
           # 你可以在 GitHub 仓库的 Settings -> Secrets and variables -> Actions 中设置 HF_SPACE_URL
           URL="${{ secrets.HF_SPACE_URL }}"
           if [ -z "$URL" ]; then
-            URL="https://huggingface.co/spaces/pengjoe12802/myhermes-agent"
+            URL="https://pengjoe12802-claude-code.hf.space/lab"
           fi
           echo "Pinging $URL ..."
           curl -sL --fail "$URL" -o /dev/null || echo "Ping failed, but continuing..."
